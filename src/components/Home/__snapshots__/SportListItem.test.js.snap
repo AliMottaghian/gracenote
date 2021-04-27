@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SportListItem /> should render App component without crashing 1`] = `
+<Row>
+  <Col
+    md={20}
+    xs={18}
+  >
+    <strong
+      style={
+        Object {
+          "lineHeight": 2,
+        }
+      }
+    >
+      Soccer
+    </strong>
+  </Col>
+  <Col
+    md={4}
+    xs={6}
+  >
+    <Button
+      icon={<ForwardRef(UnorderedListOutlined) />}
+      onClick={[Function]}
+      type="default"
+    >
+      Details
+    </Button>
+  </Col>
+</Row>
+`;

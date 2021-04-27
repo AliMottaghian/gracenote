@@ -1,0 +1,46 @@
+@import "~antd/dist/antd.css";
+
+:root {
+  --white: #ffffff;
+  --gray: #f2f2f2;
+  --dark-gray: #ddd;
+  --blue:#3E76EC;
+  --gold: #ffea00;
+  --silver: #c0c0c0;
+  --bronze: #c9ae5d;
+  --total: #4caf50;
+  --radius: 5px;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--gray);
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.medalIndicator {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+.medalIndicator.n_Gold {
+  background-color: var(--gold);
+}
+.medalIndicator.n_Silver {
+  background-color: var(--silver);
+}
+.medalIndicator.n_Bronze {
+  background-color: var(--bronze);
+}
+.medalIndicator.n_Total {
+  background-color: var(--total);
+}

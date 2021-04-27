@@ -1,0 +1,8 @@
+.cardBase {
+  background: var(--white);
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: var(--radius);
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.10);
+}

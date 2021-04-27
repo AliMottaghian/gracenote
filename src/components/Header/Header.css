@@ -1,0 +1,8 @@
+.layoutHeader{
+    background: var(--blue);
+    padding: 25px;
+}
+.layoutHeader h1{
+    color: var(--white);
+    margin-bottom: 0;
+}
