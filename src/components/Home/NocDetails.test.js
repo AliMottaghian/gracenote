@@ -6,10 +6,12 @@ describe("<NocDetails />", () => {
   beforeEach(() => {
     wrapper = shallow(
       <NocDetails
-        medals={[
-          { key: "val", key2: "val2" },
-          { key: "val", key2: "val2" },
-        ]}
+        medals={{
+          n_Gold: 8,
+          n_Silver: 7,
+          n_Bronze: 9,
+          n_Total: 24,
+        }}
         country="Netherlands"
       />
     );
@@ -22,6 +24,6 @@ describe("<NocDetails />", () => {
 
   it("should render two ModalBox componenet", () => {
     const modalBox = wrapper.find(ModalBox);
-    expect(modalBox).toHaveLength(2);
+    expect(modalBox).toHaveLength(4);
   });
 });

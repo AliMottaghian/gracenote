@@ -3,7 +3,9 @@ import SportListItem from "./SportListItem";
 describe("<SportListItem />", () => {
   let wrapper;
   beforeEach(() => {
-    wrapper = shallow(<SportListItem name="Soccer" />);
+    wrapper = shallow(
+      <SportListItem name="Soccer" id={1} history={{ push: () => {} }} />
+    );
   });
 
   it("should render App component without crashing", () => {
