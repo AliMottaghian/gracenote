@@ -13,8 +13,9 @@ const Details = ({ match, history }) => {
   useEffect(() => {
     const id = match.params.id;
     const sportDetails = getSportDetail(parseInt(id));
+    if(!sportDetails) return history.push("/notfound")
     setDetails(sportDetails);
-  }, [match]);
+  }, [match,history]);
   const backHandler = () => {
     history.goBack();
   };
